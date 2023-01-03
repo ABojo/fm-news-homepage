@@ -69,3 +69,33 @@ body {
   grid-column: 3/4;
   grid-row: 1/2;
 }
+
+.article {
+  display: grid;
+  align-items: center;
+  grid-column-gap: 1.5rem;
+}
+.article__img {
+  grid-row: 1/4;
+  width: 7rem;
+}
+.article__number, .article__heading, .article__paragraph {
+  grid-column: 2/3;
+}
+.article__number {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.article a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: hsl(240deg, 100%, 5%);
+  transition: all 0.2s;
+}
+.article a:hover {
+  color: hsl(236deg, 13%, 42%);
+}
+.article__paragraph {
+  color: hsl(236deg, 13%, 42%);
+}

@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+
+.article {
+  display: grid;
+  align-items: center;
+  grid-column-gap: 1.5rem;
+
+  &__img {
+    grid-row: 1 / 4;
+    width: 7rem;
+  }
+
+  &__number,
+  &__heading,
+  &__paragraph {
+    grid-column: 2 / 3;
+  }
+
+  &__number {
+    color: $color-gray-blue-1;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  & a {
+    font-size: 1.1rem;
+
+    text-decoration: none;
+    color: $color-gray-blue-3;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-gray-blue-2;
+    }
+  }
+
+  &__paragraph {
+    color: $color-gray-blue-2;
+  }
+}
