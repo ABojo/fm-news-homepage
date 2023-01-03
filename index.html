@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,5 +18,104 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./images/logo.svg" alt="Newspage Logo" class="header__logo" />
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">New</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Trending</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <article class="spotlight">
+          <img
+            src="./images//image-web-3-desktop.jpg"
+            alt="Web 3 Image"
+            class="spotlight__img"
+          />
+          <h1 class="spotlight__heading">The Bright Future of Web 3.0?</h1>
+          <p class="spotlight__paragraph">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#" class="spotlight__link">Read more</a>
+        </article>
+        <section class="new">
+          <h2 class="new__title">New</h2>
+          <article class="new__item">
+            <h3 class="new__heading">
+              <a href="#">Hydrogen Vs Electric Cars</a>
+            </h3>
+            <p class="new__paragraph">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          <article class="new__item">
+            <h3 class="new__heading">
+              <a href="#">The Downsides of AI Artistry</a>
+            </h3>
+            <p class="new__paragraph">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <article class="new__item">
+            <h3 class="new__heading">
+              <a href="#">Is VC Funding Drying Up?</a>
+            </h3>
+            <p class="new__paragraph">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </section>
+        <section class="articles">
+          <article class="articles__item">
+            <span class="articles__number">01</span>
+            <h4 class="articles__heading">
+              <a href="#">Reviving Retro PCs</a>
+            </h4>
+            <p class="articles__paragraph">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </article>
+          <article class="articles__item">
+            <span class="articles__number">02</span>
+            <h4 class="articles__heading">
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h4>
+            <p class="articles__paragraph">
+              Our best picks for various needs and budgets.
+            </p>
+          </article>
+          <article class="articles__item">
+            <span class="articles__number">03</span>
+            <h4 class="articles__heading">
+              <a href="#">The Growth of Gaming </a>
+            </h4>
+            <p class="articles__paragraph">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
