@@ -1,4 +1,41 @@
+@use "../abstracts/" as *;
+
 .new {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+  background-color: $color-gray-blue-3;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: min-content repeat(3, 1fr);
+  grid-gap: 1.5rem;
+
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($color-off-white, 0.3);
+    }
+  }
+
+  &__title {
+    color: $color-orange;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  & a {
+    color: $color-off-white;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-gray-blue-1;
+    }
+  }
+
+  &__heading {
+    color: $color-off-white;
+  }
+
+  &__paragraph {
+    color: $color-gray-blue-1;
+  }
 }

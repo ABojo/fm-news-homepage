@@ -97,6 +97,33 @@ body {
 .new {
   grid-column: 3/4;
   grid-row: 1/2;
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: min-content repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.new__item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 253, 250, 0.3);
+}
+.new__title {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.new a {
+  color: hsl(36deg, 100%, 99%);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.new a:hover {
+  color: hsl(233deg, 8%, 79%);
+}
+.new__heading {
+  color: hsl(36deg, 100%, 99%);
+}
+.new__paragraph {
+  color: hsl(233deg, 8%, 79%);
 }
 
 .article {
