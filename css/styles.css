@@ -12,4 +12,41 @@ html {
 
 body {
   line-height: 1.6;
+  background-color: hsl(36deg, 100%, 99%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100rem;
+  width: 90%;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 4rem;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+}
+.nav__link {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+  transition: all 0.2s;
+}
+.nav__link:hover {
+  color: hsl(240deg, 100%, 5%);
+}
+.nav__item:not(:last-child) {
+  margin-right: 2.5rem;
 }

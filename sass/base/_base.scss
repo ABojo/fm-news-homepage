@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: $color-off-white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100rem;
+  width: 90%;
+  display: grid;
+  grid-gap: 3rem;
+}
