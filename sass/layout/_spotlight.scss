@@ -16,7 +16,7 @@
 
   &__heading {
     color: $color-gray-blue-3;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
@@ -38,5 +38,10 @@
     justify-self: start;
     font-weight: 700;
     letter-spacing: 0.3rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-red-dark;
+    }
   }
 }
