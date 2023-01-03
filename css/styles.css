@@ -23,7 +23,7 @@ body {
   max-width: 100rem;
   width: 90%;
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 5rem;
 }
 
 .header {
@@ -49,4 +49,23 @@ body {
 }
 .nav__item:not(:last-child) {
   margin-right: 2.5rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.spotlight {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.spotlight__img {
+  width: 100%;
+}
+
+.new {
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
