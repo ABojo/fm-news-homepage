@@ -45,11 +45,13 @@
       </header>
       <main class="main">
         <article class="spotlight">
-          <img
-            src="./images//image-web-3-desktop.jpg"
-            alt="Web 3 Image"
-            class="spotlight__img"
-          />
+          <picture class="spotlight__img">
+            <source
+              media="(max-width: 500px)"
+              srcset="./images/image-web-3-mobile.jpg"
+            />
+            <img src="./images/image-web-3-desktop.jpg" alt="Web 3 Image" />
+          </picture>
           <h1 class="spotlight__heading">The Bright Future of Web 3.0?</h1>
           <p class="spotlight__paragraph">
             We dive into the next evolution of the web that claims to put the

@@ -121,8 +121,10 @@ body {
   align-items: start;
 }
 .spotlight__img {
-  width: 100%;
   grid-column: 1/-1;
+}
+.spotlight__img > * {
+  width: 100%;
 }
 .spotlight__heading {
   color: hsl(240deg, 100%, 5%);
