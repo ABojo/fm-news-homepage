@@ -1,0 +1,8 @@
+@mixin respond-to($bp) {
+  @if $bp == laptop {
+    @media (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+}

@@ -6,8 +6,8 @@
   background-color: $color-gray-blue-3;
   padding: 1.5rem;
   display: grid;
-  grid-template-rows: min-content repeat(3, 1fr);
-  grid-gap: 1.5rem;
+  grid-template-rows: min-content;
+  grid-gap: 1rem;
 
   &__item {
     &:not(:last-child) {
@@ -37,5 +37,14 @@
 
   &__paragraph {
     color: $color-gray-blue-1;
+  }
+
+  @include respond-to("laptop") {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    &__item {
+      padding: 1rem 0;
+    }
   }
 }
