@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   &__logo {
     width: 4rem;
@@ -30,5 +31,57 @@
     &:not(:last-child) {
       margin-right: 2.5rem;
     }
+  }
+
+  @include respond-to(tablet) {
+    display: none;
+
+    &--mobile {
+      display: block;
+      position: absolute;
+      top: 120%;
+      right: 0;
+      background-color: $color-off-white;
+      border: 1px solid rgba($color-gray-blue-3, 0.1);
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    &--mobile &__list {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &--mobile &__item {
+      margin-right: 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($color-gray-blue-3, 0.1);
+      }
+    }
+
+    &--mobile &__link {
+      padding: 2rem;
+      display: block;
+    }
+  }
+}
+
+.hamburger {
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../images/icon-menu.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  display: none;
+
+  &.open {
+    background-image: url("../images/icon-menu-close.svg");
+  }
+
+  @include respond-to(tablet) {
+    display: block;
   }
 }

@@ -5,4 +5,11 @@
       @content;
     }
   }
+
+  @if $bp == tablet {
+    @media (max-width: 43.75em) {
+      //700px
+      @content;
+    }
+  }
 }
